@@ -35,7 +35,6 @@
                                 <b>'. giveHost($_SERVER['HTTP_HOST']).'</b> is one of the most popular and fastest Mp3 search engines in the world. With our search engine, you can search for a song name or an artist name in several databases and download the results immediately for free.<br><br>
                                 You can even look at the newest songs available, if you have no idea what to listen.<br>
                                 Have fun and enjoy this website! And if you like, please bookmark us (CTRL + D)<br><br>
-                                <!-- Hupso Share Buttons - http://www.hupso.com/share/ --><div class="hupso-share-buttons"><a class="hupso_toolbar" href="http://www.hupso.com/share/"><img src="//static.hupso.com/share/buttons/share.png" style="border:0px; padding-top:5px; float:left;" alt="Share Button"/></a><script type="text/javascript">var hupso_services_t=new Array("Twitter","Facebook","Google Plus","Pinterest","Linkedin","Tumblr","StumbleUpon");var hupso_toolbar_size_t="big";</script><script type="text/javascript" src="//static.hupso.com/share/js/share_toolbar.js"></script></div><!-- Hupso Share Buttons -->
 							
 
 						<center><div class="page-header">
