@@ -1,0 +1,44 @@
+{% api %}{% video %}
+{
+ "kind": "youtube#searchListResponse",
+ "etag": "\"GM4ZnRh2gk1X1BLWgHklTm-3cgQ/3spHrv3LwI1soIJCp6xMAURV3Dk\"",
+ "nextPageToken": "CAIQAA",
+ "regionCode": "ID",
+ "pageInfo": {
+  "totalResults": 1000000,
+  "resultsPerPage": 2
+ },
+ "items": [
+
+
+
+{% for ti, item in api %}
+      {% for vi, video in videos %}
+        {% if ti == vi %}
+            {
+			   "kind": "youtube#searchResult",
+			   "etag": "\"GM4ZnRh2gk1X1BLWgHklTm-3cgQ/vtM3x_bpc0DVKY6T0fTus5kVj90\"",
+			   "id": {
+				"kind": "youtube#video",
+				"videoId": "{{ video.link | get_video_id }}"
+			   },
+			   "snippet": {
+				"publishedAt": "2016-05-07T14:58:04.000Z",
+				"channelId": "spp",
+				"title": "{{video.title  | remove '...' | trim | strtolower | ucfirst }}",
+				"description": "spp",
+				"channelTitle": "spp",
+				"liveBroadcastContent": "none"
+			   }
+			  },
+        {% endif %}
+        {% endfor %}
+    {% endfor %}
+	
+	
+	
+
+
+
+ ]
+}

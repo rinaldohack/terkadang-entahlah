@@ -1,0 +1,6 @@
+{% api %}
+
+			{% for index, item in api %}{% if index == 3 %}<p>{% endif %}{% if index == 6 %}<p>{% endif %}{% if index == 9 %}<p>{% endif %}
+			{{item.title  | remove '...' | trim | strtolower | ucfirst }}, {{item.description | remove '...' | trim | strtolower | ucfirst }}.
+			{% if index == 3 %}</p>{% endif %}{% if index == 6 %}</p>{% endif %}{% if index == 9 %}</p>{% endif %}
+			{% endfor %}

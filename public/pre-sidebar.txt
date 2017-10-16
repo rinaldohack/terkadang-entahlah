@@ -1,0 +1,64 @@
+<!--sidebar-->
+			<div class="col-lg-3">
+
+				<div class="page-header">
+					  <h4 id="buttons">What people are searching for</h4>
+				</div>				
+				<?php 
+				for ($i=0;$i<=5;$i++)
+				{
+					randomterms();
+					echo '<br>';
+				}
+				?>
+				
+				
+				<div class="page-header">
+					  <h4 id="buttons">Categories</h4>
+				</div>
+				<div class="list-group table-of-contents">
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Alternative-Rock-songs/">Alternative Rock</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Blues-songs/">Blues</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Broadway-and-Vocalists-songs/">Broadway and Vocalists</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Chamber-Music-songs/">Chamber Music</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Children's-Music-songs/">Children's Music</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Christian-songs/">Christian</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Classical-songs/">Classical</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Country-songs/">Country</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Dance-and-DJ-songs/">Dance and DJ</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Folk-songs/">Folk</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Funk-Rock-songs/">Funk Rock</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Glam-songs/">Glam</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Gospel-songs/">Gospel</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Hard-Rock-and-Metal-songs/">Hard Rock and Metal</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/International-songs/">International</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Jam-Bands-songs/">Jam Bands</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Jazz-songs/">Jazz</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Korean-Pop-songs/">Korean Pop</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Latin-Music-songs/">Latin Music</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/New-Age-songs/">New Age</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Oldies-and-Retro-songs/">Oldies and Retro</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Opera-and-Vocal-songs/">Opera and Vocal</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Pop-songs/">Pop</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Progressive-songs/">Progressive</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Rap-and-Hip-Hop-songs/">Rap and Hip Hop</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Rap-Rock-songs/">Rap Rock</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Rock-songs/">Rock</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Soundtracks-songs/">Soundtracks</a>					
+					<a class="list-group-item" href="http://<?php echo $_SERVER['HTTP_HOST'];?>/category/Symphonies-songs/">Symphonies</a>			
+				</div>
+				<div class="page-header">
+					  <h4 id="buttons">Statistics</h4>
+				</div>
+				<center>
+					<a href="http://www.alexa.com/siteinfo/<?php echo $_SERVER['HTTP_HOST'];?>"><script type="text/javascript" src="http://xslt.alexa.com/site_stats/js/s/a?url=<?php echo $_SERVER['HTTP_HOST'];?>"></script></a>
+					<br>
+					<br>
+
+
+
+
+				</center>
+			</div>
+
+			<!--end sidebar-->

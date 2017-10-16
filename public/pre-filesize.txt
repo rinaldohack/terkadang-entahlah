@@ -1,0 +1,84 @@
+$dur = file_get_contents("http://".$servername.'/api/yt_v_details.php?query='.$videoid);
+
+
+
+		$duration =json_decode($dur, true);
+		foreach ($duration['items'] as $vidTime) {
+			$vTime= $vidTime['contentDetails']['duration'];
+		}
+
+		  $pattern = '/PT(([0-23]+)H)(([0-9]+)M)?(([0-9]+)S)?/';
+		  preg_match($pattern, $vTime, $matches);
+
+		  if(!empty($matches[2]))
+		  {
+			$hrs = $matches[2];
+		  }
+		  else
+		  {
+			$hrs = 0;
+		  }
+
+
+		  if(!empty($matches[4]))
+		  {
+			$mins = $matches[4];
+		  }
+		  else
+		  {
+			$mins = 0;
+		  }
+		  
+		  if(!empty($matches[6]))
+		  {
+			$secs = $matches[6];
+		  }
+		  else
+		  {
+			$secs = 0;
+		  }
+
+		if ($hrs == 0 && $mins == 0 && $secs == 0)
+		{
+
+		  $pattern = '/PT(([0-9]+)M)?(([0-9]+)S)?/';
+		  preg_match($pattern, $vTime, $matches);
+
+		$hrs = 0;
+
+
+		  if(!empty($matches[2]))
+		  {
+			$mins = $matches[2];
+		  }
+		  else
+		  {
+			$mins = 0;
+		  }
+
+		  if(!empty($matches[4]))
+		  {
+			$secs = $matches[4];
+		  }
+		  else
+		  {
+			$secs = 0;
+		  }
+
+
+		}
+
+
+	//	mysqli_query($conn,"UPDATE ytapi SET used = used+1 WHERE api='".$youtube_api."'");
+
+		if ($loop==1)
+		{
+			echo '<div class="col-sm-12">';
+
+		}
+
+		$filesize = round(((((($mins * 60 )+ ($hrs * 3600) + $secs) * 192 )/8)/1000),2);
+
+		
+		<span class="glyphicon glyphicon-time"></span>  '.$hrs.' hours '.$mins.' minutes '.$secs.' seconds. <br />
+				<span class="glyphicon glyphicon-download-alt"></span> '.$filesize.' MB

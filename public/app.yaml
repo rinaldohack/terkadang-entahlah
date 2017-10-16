@@ -1,0 +1,31 @@
+runtime: php55
+api_version: 1
+skip_files:
+- ^cache$
+- ^injector$
+
+handlers:
+- url: /info.php
+  script: info.php
+  secure: never
+
+- url: /yt.php
+  script: yt.php
+  secure: never
+
+- url: /yt_v_details.php
+  script: yt_v_details.php
+  secure: never
+
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /.*
+  script: index.php
+  secure: never
