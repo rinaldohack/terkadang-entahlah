@@ -1,3 +1,0 @@
-browser_parsers:
-    - regex: '(Chrome)/(\d+)\.(\d+)\.(\d+)'
-      family_replacement: 'Chrome Custom Regex Path Test'
